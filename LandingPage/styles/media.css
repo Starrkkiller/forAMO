@@ -1,0 +1,222 @@
+@media (min-width: 320px) and (max-width: 370px) {
+  .header__logo, .menu__items_desktop, .promo__button, .header__contact, .info__privileges_desktop {
+    display: none;
+  }
+
+  .wrapper__common, .header__nav, .nav__item, .promo, .call__description, .info__description {
+    padding: 0;
+    margin: 0;
+  }
+
+/*------------- HADER  -------------*/
+
+  .header {
+    padding: 20px 0 0;
+    background-color: #0E1014;
+    position: absolute;
+    top: 0;
+    left: 14px;
+  }
+
+  .nav__item:last-child {
+    display: none;
+  }
+
+  .nav__item {
+    font-family: var(--primary);
+    font-weight: var(--primary-medium);
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-right: 16px;
+  }
+
+  .nav__item:last-child {
+    margin: 0
+  }
+
+/*------------- PROMO-BLOCK  -------------*/
+
+  .promo {
+    padding: 95px 14px 60px;
+    display: block;
+    background-image: url('../img/bg.png');
+  }
+
+  .promo__info {
+    margin-top: 45px;
+  }
+
+  .call__header {
+    font-family: var(--primary);
+    font-weight: var(--primary-regular);
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .call__header_colored {
+    font-family: var(--primary);
+    font-weight: var(--primary-black);
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .call__description {
+    font-family: var(--secondary);
+    font-weight: var(--secondary-regular);
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+
+  .info__description {
+    font-family: var(--primary);
+    font-weight: var(--primary-medium);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    padding: 0px 4px;
+    letter-spacing: 0.2;
+    margin-bottom: 20px;
+  }
+
+  .info__description_dark, .info__description_light {
+    text-transform: lowercase;
+  }
+
+  .info__privileges_mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .privileges__description {
+    display: none;
+  }
+
+  .privileges__header {
+    font-family: var(--secondary);
+    font-weight: var(--secondary-regular);
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    width: 57%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .privileges__header:nth-child(3), .privileges__header:nth-child(1) {
+    width: 40%;
+  }
+
+  .privileges__header:nth-child(3), .privileges__header:nth-child(4) {
+    margin-top: 14px;
+  }
+
+  .privileges__header::before {
+    display: block;
+    content: " ";
+    width: 10px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    border-image-slice: 1;
+    margin-right: 5px;
+  }
+
+  .privileges__header_colored {
+    display: inline;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+/*------------- FOOTER -------------*/
+  .wrapper__addition {
+    max-width: 320px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 39px 15px 60px;
+    background-color: #0E1014;
+    margin: 0;
+  }
+
+  .footer__menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu__items_mobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+  }
+
+  .footer__about-company {
+    margin-bottom: 20px;
+  }
+
+  .contacts__header, .menu__header, .about-company__header {
+    font-family: var(--primary);
+    font-weight: var(--primary-bold);
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .about-company__item, .menu__item {
+    font-family: var(--primary);
+    font-weight: var(--primary-regular);
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .menu__items {
+    height: 155px;
+  }
+
+  .menu__item {
+    width: 40%;
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  .footer__contacts {
+    align-items: flex-start;
+    margin-top: 17px;
+  }
+
+  .contacts__item-footer {
+    text-align: left;
+  }
+
+  .contacts__social {
+    justify-content: flex-start;
+    margin-top: 15px;
+    
+  }
+  
+  .contacts__social-item {
+    margin: 0 17px 0 0;
+  }
+
+  .contacts__social-item:first-child {
+    margin-left: 5px;
+  }
+
+  .contacts__policy {
+    text-align: left;
+    margin: 50px 0 5px;
+  }
+};

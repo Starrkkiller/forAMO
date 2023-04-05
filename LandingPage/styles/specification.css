@@ -1,0 +1,22 @@
+/*------------- FONTS  -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap'); /*Inter-font import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap'); /*Montserrat-font import*/
+
+/*------------- VARS  -------------*/
+:root {
+  /* Inter-Font */
+  --primary: 'Inter';
+  --primary-black: 900;
+  --primary-bold: 700;
+  --primary-medium: 500;
+  --primary-regular: 400;
+
+  /* Montserrat-Font */
+  --secondary: 'Montserrat';
+  --secondary-regular: 400;
+  --secondary-light: 300;
+
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #E4E5EA;
+}
