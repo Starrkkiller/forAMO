@@ -6,11 +6,8 @@ const timerEl = document.querySelector('span');
 const createTimerAnimator = () => {
   return (inputSeconds) => {
   let hours = Math.floor(inputSeconds/3600);
-  console.log(hours)
   let minutes = Math.floor((inputSeconds - hours*3600)/60);
-  console.log(minutes)
   let seconds = inputSeconds%100%60;
-  console.log(seconds)
   const decremetSeconds = () => {
     if(hours <= 0){
       hours = 0
@@ -38,12 +35,11 @@ const createTimerAnimator = () => {
       } 
     }
     seconds--;
-    // console.log(seconds)
     
     return timerEl.innerHTML = `${hours} : ${minutes} : ${seconds}`
   }
   const timer = setInterval(decremetSeconds, 1000)
-  setTimeout(() => { clearInterval(timer); alert('stop'); }, inputSeconds*1000);
+  setTimeout(() => { clearInterval(timer); alert('time is out!'); }, inputSeconds*1000);
 
 }
 }
@@ -57,6 +53,9 @@ buttonEl.addEventListener('click', () => {
 
   inputEl.value = '';
 });
+
+
+
 
 
 
